@@ -1,7 +1,9 @@
 import axios from 'axios'
 
 export default class WebService {
-	private static api = axios.create({ baseURL: 'http://localhost:8080' })
+	private static api = axios.create({
+		baseURL: 'https://mmorpg-be.vercel.app',
+	})
 	constructor() {}
 
 	public static async get(url: string) {
